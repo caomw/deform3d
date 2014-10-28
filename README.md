@@ -18,7 +18,7 @@ fMesh.v = deformation.apply(Mesh.v);
 
 ```
 lambda = 0; % TPS regularization term
-deformation = Interpolation(points3d, points2d, lambda).interpolate();
+deformation = Interpolation(sourcePts, targetPts, lambda).interpolate();
 fMesh.v = deformation.apply(Mesh.v);
 ```
 
